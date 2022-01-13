@@ -7,7 +7,8 @@ function addGif(response) {
     let randomIndex = Math.floor(Math.random() * numResults);
     let $newGif = $('<img>', {
       src: response.data.data[randomIndex].images.original.url,
-      class: 'w-100'
+      width: 200,
+      class: 'p-2'
     });
     $gifArea.append($newGif);
   }
